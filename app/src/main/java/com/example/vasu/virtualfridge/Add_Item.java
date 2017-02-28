@@ -1,8 +1,11 @@
 package com.example.vasu.virtualfridge;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -31,6 +34,7 @@ public class Add_Item extends AppCompatActivity {
     ImageButton ib;
     Button b1;
     ImageView im1;
+
     byte imageInByte[];
     // Activity request codes
     private static final int CAMERA_CAPTURE_IMAGE_REQUEST_CODE = 100;
@@ -48,6 +52,14 @@ public class Add_Item extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_add__item);
+
+         // the drawable (Captain Obvious, to the rescue!!!)
+        Resources res = getResources();
+        Drawable drawable = res.getDrawable(R.drawable.idea);
+        Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+         imageInByte = stream.toByteArray();
         e1 = (EditText) findViewById(R.id.editText);
         e2 = (EditText) findViewById(R.id.editText2);
         im1 = (ImageView) findViewById(R.id.imageView2);
