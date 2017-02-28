@@ -29,8 +29,9 @@ public class MainActivity extends AppCompatActivity {
         r2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Hi soon i will show you your fridge!",Toast.LENGTH_LONG).show();
-
+                //Toast.makeText(getApplicationContext(),"Hi soon i will show you your fridge!",Toast.LENGTH_LONG).show();
+                Intent ac = new Intent(getApplicationContext(),View_item.class);
+                startActivity(ac);
             }
         });
         r3.setOnClickListener(new View.OnClickListener() {
