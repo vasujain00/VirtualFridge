@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Toast.makeText(getApplicationContext(),"Hi soon I will create your fridge!",Toast.LENGTH_LONG).show();
-                Intent ab = new Intent(getApplicationContext(),Add_Item.class);
+                Intent ab = new Intent(getApplicationContext(),Grid.class);
                 startActivity(ab);
             }
         });

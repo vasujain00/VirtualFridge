@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -44,6 +45,7 @@ public class View_item extends AppCompatActivity {
         adapter = new ContactImageAdapter(this, R.layout.list_item,
                 imageArry);
         ListView dataList = (ListView) findViewById(R.id.list);
+        //GridView gridView = (GridView) findViewById(R.id.grid_view);
         dataList.setAdapter(adapter);
         //rowItems=  new ArrayList<RowItem>();
     }
