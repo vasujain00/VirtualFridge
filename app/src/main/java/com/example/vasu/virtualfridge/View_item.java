@@ -5,6 +5,8 @@ import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -48,5 +50,11 @@ public class View_item extends AppCompatActivity {
         //GridView gridView = (GridView) findViewById(R.id.grid_view);
         dataList.setAdapter(adapter);
         //rowItems=  new ArrayList<RowItem>();
+        dataList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                
+            }
+        });
     }
 }

@@ -11,8 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ContactImageAdapter extends ArrayAdapter<Item>{
     Context context;
@@ -27,7 +29,7 @@ public class ContactImageAdapter extends ArrayAdapter<Item>{
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, final View convertView, ViewGroup parent) {
         View row = convertView;
         ImageHolder holder = null;
 
@@ -39,6 +41,7 @@ public class ContactImageAdapter extends ArrayAdapter<Item>{
             holder = new ImageHolder();
             holder.txtTitle = (TextView)row.findViewById(R.id.txtTitle);
             holder.imgIcon = (ImageView)row.findViewById(R.id.imgIcon);
+            holder.b = (Button)row.findViewById(R.id.button2);
             row.setTag(holder);
         }
         else
@@ -54,6 +57,15 @@ public class ContactImageAdapter extends ArrayAdapter<Item>{
         ByteArrayInputStream imageStream = new ByteArrayInputStream(outImage);
         Bitmap theImage = BitmapFactory.decodeStream(imageStream);
         holder.imgIcon.setImageBitmap(theImage);
+        holder.b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int id = position;
+                DatabaseHandler db = new DatabaseHandler(context);
+                db.deleteContact(id);
+                Toast.makeText(context,"1",Toast.LENGTH_LONG).show();
+            }
+        });
         return row;
 
     }
@@ -62,5 +74,6 @@ public class ContactImageAdapter extends ArrayAdapter<Item>{
     {
         ImageView imgIcon;
         TextView txtTitle;
+        Button b;
     }
 }

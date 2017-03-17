@@ -75,6 +75,11 @@
         <item >Blue Grey</item>
     </string-array>
 
+    <color name="view_bg">#b20e0f</color>
+    <color name="white">#ffffff</color>
+    <color name="btn_bg">#3e4a56</color>
+
+
     <string-array name="arr_main_color_code">
         <item >#568AB7</item>
         <item >#F44336</item>

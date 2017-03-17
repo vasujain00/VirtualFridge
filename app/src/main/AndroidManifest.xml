@@ -3,7 +3,7 @@
     package="com.example.vasu.virtualfridge">
 
     <uses-feature android:name="android.hardware.camera" />
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <application
@@ -28,6 +28,7 @@
         <activity android:name=".Grid" />
         <activity android:name=".View_item" />
         <activity android:name=".Add_Item"></activity>
+        <receiver android:name=".NotificationPublisher" />
     </application>
 
 </manifest>
