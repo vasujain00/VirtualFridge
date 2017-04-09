@@ -9,56 +9,79 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.vasu.virtualfridge.Add_Item">
+    tools:context="com.example.vasu.grosiri.vasu.example.vasu.grosiri.Add_Item">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:text="Days"
-        android:ems="10"
-        android:layout_marginTop="23dp"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
-        android:layout_marginEnd="12dp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="136dp"
+            android:layout_height="96dp"
+            app:srcCompat="@drawable/qwe"
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/gg"
-        android:id="@+id/imageButton"
-        android:background="@null"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true" />
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:id="@+id/imageView2" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_marginTop="43dp"
-        android:layout_below="@+id/imageView2"
-        android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Name:"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            />
+        <EditText
+            android:id="@+id/ed1"
+            android:background="@drawable/edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+        <!-- Text Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Days:"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            />
 
-    <Button
-        android:text="Add this"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:id="@+id/button" />
+        <!-- Spinner Element -->
+        <Spinner
+            android:id="@+id/spinner"
+            android:background="@drawable/edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/idea"
-        android:layout_marginTop="24dp"
-        android:id="@+id/imageView2"
-        android:layout_alignParentTop="true"
-        android:layout_alignEnd="@+id/button"
-        android:layout_marginEnd="11dp" />
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pickit"
+            android:layout_gravity="center"
+            android:id="@+id/imageButton"
+            android:background="@null"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+
+            android:textSize="16sp"
+            android:background="@drawable/bu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Button"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:id="@+id/button1" />
+
+
+    </LinearLayout>
 </RelativeLayout>

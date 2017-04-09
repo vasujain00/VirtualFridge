@@ -1,34 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.vasu.virtualfridge">
+    package="com.example.vasu.grosiri">
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.location" android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ridge"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!-- Splash screen -->
-        <activity
-            android:name=".SplashScreen"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity android:name="com.example.vasu.grosiri.vasu.example.vasu.grosiri.WelcomeActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Grid" />
-        <activity android:name=".View_item" />
-        <activity android:name=".Add_Item"></activity>
-        <receiver android:name=".NotificationPublisher" />
+        <!-- Splash screen -->
+        <activity
+            android:name="com.example.vasu.grosiri.vasu.example.vasu.grosiri.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <!--<activity android:name=".SplashScreen"></activity> -->
+        <activity android:name="com.example.vasu.grosiri.vasu.example.vasu.grosiri.MainActivity"
+            android:label="Gro-Siri"></activity>
+        <activity android:name="com.example.vasu.grosiri.vasu.example.vasu.grosiri.Grid"
+            android:label="Create Fridge"/>
+        <activity android:name="com.example.vasu.grosiri.vasu.example.vasu.grosiri.View_item"
+            android:label="View Fridge"/>
+        <activity android:name="com.example.vasu.grosiri.vasu.example.vasu.grosiri.Add_Item"></activity>
+        <activity android:name="com.example.vasu.grosiri.vasu.example.vasu.grosiri.updateDb"></activity>
+        <activity android:name="com.example.vasu.grosiri.vasu.example.vasu.grosiri.DefoAdd"></activity>
+        <activity android:name="com.example.vasu.grosiri.vasu.example.vasu.grosiri.LocationDemo"
+            android:label="Get Reminders"></activity>
+        <receiver android:name="com.example.vasu.grosiri.vasu.example.vasu.grosiri.NotificationPublisher" />
     </application>
 
 </manifest>

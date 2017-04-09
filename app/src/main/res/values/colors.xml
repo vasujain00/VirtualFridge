@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#E53935</color>
-    <color name="colorPrimaryDark">#E53935</color>
-    <color name="colorPrimaryLight">#E53935</color>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#F57C00</color>
+    <color name="colorPrimaryLight">#FFB74D</color>
 
     <color name="colorAccent">#E6C14D</color>
     <color name="colorAccentDark">#C4A035</color>
@@ -10,14 +10,14 @@
 
     <color name="grey_hard">#96989A</color>
     <color name="grey_medium">#BDBFC1</color>
-    <color name="grey_soft">#F5F5F5</color>
+    <color name="grey_soft">#808080	</color>
     <color name="grey_dark">#332C2B</color>
 
     <color name="grey_bg">#E6E6E6</color>
     <color name="icon_drawer_color">#727272</color>
     <color name="drawer_header_bg">#E53935</color>
 
-    <color name="marker_primary">#1F59A6</color>
+    <color name="marker_primary">#1f59a6</color>
     <color name="marker_secondary">#EE792A</color>
 
     <color name="dark_overlay">#73000000</color>

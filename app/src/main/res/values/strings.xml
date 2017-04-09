@@ -1,8 +1,35 @@
 <resources>
-    <string name="app_name">VirtualFridge</string>
+    <string name="app_name">Gro-Siri</string>
 
     <string name="lbl_you_are_at">YOU ARE AT</string>
     <string name="btn_get_location">GET MY LOCATION</string>
     <string name="btn_start_location_updates">START LOCATION UPDATES</string>
     <string name="btn_stop_location_updates">STOP LOCATION UPDATES</string>
+    <string-array name="planets_array">
+        <item>Dairy Products</item>
+        <item>Vegetables</item>
+        <item>Fruits</item>
+        <item>Ready to Eat</item>
+        <item>Bakery</item>
+        <item>Juices</item>
+        <item>Frozen items</item>
+    </string-array>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello!</string>
+    <string name="slide_1_desc">The easiest way to save food from wastage!</string>
+
+    <string name="slide_2_title">Scan List</string>
+    <string name="slide_2_desc">Scan your Grocery list and keep track of expiration</string>
+
+    <string name="slide_3_title">Say what you buy</string>
+    <string name="slide_3_desc">Speak to app and make him alert about your food item</string>
+
+    <string name="slide_4_title">Set Your own Reminders</string>
+    <string name="slide_4_desc">Set days when you want alert about food and expiration</string>
 </resources>

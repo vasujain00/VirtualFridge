@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="136dp"
+        android:layout_height="96dp"
+        app:srcCompat="@drawable/qwe"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/imageView2" />
+    <Button android:id="@+id/imgbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="34dp"
+        android:text="CLICK PICTURE"
+
+        android:background="#7FFF00"
+
+         />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:paddingTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="NAME"/>
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+         >
+    </EditText>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="DAYS"/>
+
+    <!-- Spinner Element -->
+    <Spinner
+        android:id="@+id/spinner"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.44"
+        android:paddingBottom="20dp"/>
+
+
+    <Button android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="34dp"
+        android:text="ADD"
+        android:background="#7FFF00"
+
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
